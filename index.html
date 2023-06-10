@@ -6,185 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Portfolio Landing Page</title>
-    <style>
-        *{
-            margin: 0px;
-            box-sizing: border-box;
-            padding: 0px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-        .Hero-section{
-                 max-width: 100%;
-                 position: relative;
-        }
-        .Hero-section h1{
-            position: absolute;
-            top: 18%;
-            left: 5%;
-            color: white;  
-        }
-        .Hero-section h1 span{
-            font-size: 1rem; 
-            font-weight: 200;
-        }
-        .Hero-section h2{
-            position: absolute;
-            top: 24%;
-            left: 7%;
-            color: white;
-        }
-        .Hero-section img{
-           width: 100%;
-           height: 100%;
-           object-fit: cover;
-        }
-        .Black{
-            position: relative;
-            background-color: black;
-            color: white;
-            text-align: center;
-            font-size: 20px;
-            padding: 5px;
-        }
-        .Black span{
-             font-size: 50px;
-        }
-        .card-container-section{
-            position: relative;
-            display: flex;
-            justify-content: center;
-            margin-left: 10px;
-            gap: 30px;
-            margin-top: 40px;
-            flex-wrap: wrap;
-        }
-        .card-container {
-            max-width: 400px;
-            max-height: 450px;
-            position: static;
-            box-shadow: 1px 0px 5px 0px grey;
-            border-radius: 10px;
-        }
-        .card-container img{
-            position: relative;
-            width: 100%;
-            height: 50%;
-            object-fit: cover;
-            border-top-right-radius: 10px;
-            border-top-left-radius: 10px;
-        }
-        .content{
-            display: grid;
-            grid-template-columns: repeat( auto-fit, minmax(340px, 1fr));
-            gap: 15px;
-            margin: 10px;
-        }
-        .content h3{
-            padding-left: 10px;
-            padding-top: 5px;
-        }
-        .content p{
-            padding-left: 10px;
-            margin-bottom: -30px;
-        }
-        .Bottom-section{
-            display: flex;
-            margin: 80px;
-            gap: 50px;
-            justify-content: space-evenly;
-        }
-        .info1{
-            background-color:rgb(49, 154, 160);
-            height: 150px;
-            color: black;
-            padding: 20px;
-            height: fit-content;
-        }
-        .info1 p{
-            padding-top: 10px;
-        }
-        .info2 p{
-            padding-top: 10px;
-        }
-        .info2{
-            background-color: rgb(49, 154, 160);
-            height: 150px;
-            color: black;
-            padding: 20px;
-            height: fit-content;
-        }
-        @media (max-width:700px){
-            .Hero-section h1{
-                position: absolute;
-                top: 5%;
-                left: 40%;
-                color:white;  
-            }
-            .Hero-section h2{
-                position: absolute;
-                top: 12%;
-                left: 25%;
-                color: white;  
-            }
-            .Black{
-                font-size: 20px;
-                display: grid;
-                
-            }
-            .Black span{
-                font-size: 50px;
-            }
-            .content{
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <div class="container">
         <section class="Hero-section">
-            <img src="https://c4.wallpaperflare.com/wallpaper/47/95/705/anonymus-hacker-computer-mask-wallpaper-preview.jpg"
+            <img src="https://images.unsplash.com/photo-1514168757508-07ffe9ae125b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
                 alt="image">
-            <h1>Hi, <span>I AM NIKHIL KARN</span></h1>
-            <h2>FULL STACK DEVELOPER</h2>
+            <div class="nav">
+                <h1>Hi, <span>I AM NIKHIL KARN</span></h1>
+                <h2>FULL STACK DEVELOPER</h2>
+            </div>
         </section>
-      <section class="Black Box Section">
-        <h1>WORK, I CAN DO FOR <span> YOU</span></h1>
-      </section>
-      <section class="card-container-section">
-        <div class="card-container">
-             <img src="https://c4.wallpaperflare.com/wallpaper/170/85/290/anarchy-computer-hack-hacker-wallpaper-preview.jpg" alt="image">
-             <div class="content">
-                   <h3>Web Development</h3>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse commodi vel, eum numquam ex labore dignissimos iusto, laborum, nostrum laboriosam ut velit quibusdam optio? Eum tempore possimus illum vitae saepe!</p>
-        </div>
-        </div>
-        <div class="card-container">
-                <img src="https://c4.wallpaperflare.com/wallpaper/566/115/630/hacker-computer-sadic-dark-anarchy-free-download-wallpaper-preview.jpg" alt="image">
+        <section class="Black Box Section">
+            <h1>WORK, I CAN DO FOR <span> YOU</span></h1>
+        </section>
+        <section class="card-container-section">
+            <div class="card-container">
+                <img src="https://c4.wallpaperflare.com/wallpaper/170/85/290/anarchy-computer-hack-hacker-wallpaper-preview.jpg"
+                    alt="image">
                 <div class="content">
-                <h3>App Development</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores explicabo sequi magnam ullam aliquam fugit optio, debitis omnis recusandae numquam laborum cupiditate! Soluta illo deleniti minus nisi quis consequuntur. Iure.</p>
-              </div>
-        </div>
-              <div class="card-container">
-                    <img src="https://c4.wallpaperflare.com/wallpaper/199/411/650/anarchy-anonymous-code-computer-wallpaper-preview.jpg" alt="image">
-                    <div class="content">
-                    <h3>UI UX Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem minus alias reiciendis atque neque repudiandae tempora numquam mollitia blanditiis fugit. Obcaecati laboriosam voluptate asperiores, consequuntur nesciunt aut libero possimus. Perferendis.</p>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse commodi vel, eum numquam ex labore
+                        dignissimos iusto, laborum, nostrum laboriosam ut velit quibusdam optio? Eum tempore possimus
+                        illum vitae saepe!</p>
                 </div>
-              </div>
-      </section>
-      <section class="Bottom-section">
-        <div class="info1">
-          <h2>Contact Me</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum deleniti tempora, eos accusamus laborum harum minima id adipisci totam exercitationem nesciunt reiciendis. </p>
-        </div>
-        <div class="info2">
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam dignissimos neque, facilis architecto voluptates accusantium eaque ut maiores.</p>
-        </div>
-      </section>
+            </div>
+            <div class="card-container">
+                <img src="https://c4.wallpaperflare.com/wallpaper/566/115/630/hacker-computer-sadic-dark-anarchy-free-download-wallpaper-preview.jpg"
+                    alt="image">
+                <div class="content">
+                    <h3>App Development</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores explicabo sequi magnam ullam
+                        aliquam fugit optio, debitis omnis recusandae numquam laborum cupiditate! Soluta illo deleniti
+                        minus nisi quis consequuntur. Iure.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="https://c4.wallpaperflare.com/wallpaper/199/411/650/anarchy-anonymous-code-computer-wallpaper-preview.jpg"
+                    alt="image">
+                <div class="content">
+                    <h3>UI UX Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem minus alias reiciendis atque
+                        neque repudiandae tempora numquam mollitia blanditiis fugit. Obcaecati laboriosam voluptate
+                        asperiores, consequuntur nesciunt aut libero possimus. Perferendis.</p>
+                </div>
+            </div>
+        </section>
+        <section class="Bottom-section">
+            <div class="info1">
+                <h2>Contact Me</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum deleniti tempora, eos accusamus
+                    laborum harum minima id adipisci totam exercitationem nesciunt reiciendis. </p>
+            </div>
+            <div class="info2">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam dignissimos neque, facilis
+                    architecto voluptates accusantium eaque ut maiores.</p>
+            </div>
+        </section>
     </div>
 </body>
 
